@@ -107,7 +107,6 @@ object DM_testepratico: TDM_testepratico
     end
   end
   object FDUsuario: TFDQuery
-    Active = True
     Connection = fdcDB
     SQL.Strings = (
       'SELECT ID_USUARIO,'
@@ -893,9 +892,10 @@ object DM_testepratico: TDM_testepratico
     Params.Strings = (
       'User_Name=sysdba'
       'Password=masterkey'
-      'Database=C:\DBsergio\TESTEDB.FDB'
+      
+        'Database=C:\Users\slima\Documents\Guarani Sistemas\DBsergio\TEST' +
+        'EDB.FDB'
       'DriverID=FB')
-    Connected = True
     LoginPrompt = False
     Left = 57
     Top = 17
